@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".ThemSuaActivity">
+
+    <!-- Tiêu đề màn hình -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sản phẩm"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã sản phẩm"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EditText cho Tên sản phẩm -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMaSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã sản phẩm"
+            android:textColorHint="#666666" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tiêu đề "Tên sản phẩm" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EditText cho Tên sản phẩm -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sản phẩm"
+            android:textColorHint="#666666" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tiêu đề "Số lượng" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EditText cho Số lượng -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số lượng"
+            android:inputType="number"
+            android:textColorHint="#666666" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tiêu đề "Đơn giá" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn giá"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EditText cho Đơn giá -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDonGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập đơn giá"
+            android:inputType="numberDecimal"
+            android:textColorHint="#666666" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Các nút Lưu và Thoát -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- Nút Thêm -->
+        <Button
+            android:id="@+id/btnThemSP"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Thêm"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Nút Thoát -->
+        <Button
+            android:id="@+id/btnThoatSP"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Thoát"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:elevation="4dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</LinearLayout>

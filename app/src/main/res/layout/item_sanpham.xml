@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Mã sản phẩm -->
+    <TextView
+        android:id="@+id/txtMa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã: SP001"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm: Điện thoại"
+        android:textSize="16sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtMa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Số lượng sản phẩm -->
+    <TextView
+        android:id="@+id/txtSoLuong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Số lượng: 5"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/txtMa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Đơn giá sản phẩm -->
+    <TextView
+        android:id="@+id/txtDonGia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Đơn giá: 1,500,000"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/txtSoLuong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Thành tiền sản phẩm -->
+    <TextView
+        android:id="@+id/txtThanhTien"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền: 7,500,000"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtDonGia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
